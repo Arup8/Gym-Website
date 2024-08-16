@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arup Fitness</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link rel="stylesheet" href="Project1/css/style.css">
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            /*We use that to cover the image whole background*/
+            color: white;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            /*Here it's position becames absolute from it's parent(header) */
+            left: 68px;
+            top: 13px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            /* If I want this comes in center then we should give this below 3 properties [display: block , margin: y axis(any value) x axis(auto)] */
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 33px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            /*Cause we did this for make them in same line*/
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            /*To remove underline*/
+            padding: 34px 10px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .left img {
+            height: 70px;
+            width: 90px;
+            opacity: 0.18;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(34, 32, 32);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 108px 82px;
+            padding: 28px;
+            width: 33%;
+            border-radius: 29px;
+
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 328px;
+            padding: 2px;
+            border: 2px solid black;
+            margin: 9px auto;
+            font-size: 20px;
+            border-radius: 9px;
+            font-family: 'Baloo Bhai', cursive;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            margin: auto;
+            width: 23%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2024/01/10/05/32/ai-generated-8498914_640.jpg" alt="">
+            <div style="text-align: center; line-height: 19px;
+            font-size: 15px;">Arup Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="opacity: 0.45;">Join the best gym of Kolkata now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+
+            </div>
+            <button class="btn" type="submit">Submit</button>
+            <button class="btn" type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
